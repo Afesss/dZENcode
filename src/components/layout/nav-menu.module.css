@@ -1,0 +1,71 @@
+.navPanel {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    height: calc(100vh - var(--header-height));
+    width: 200px;
+    overflow-y: clip;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #36454d;
+    height: 210px;
+    min-height: 210px;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.navMenu::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: calc(100vh - var(--header-height));
+    box-shadow: 0 0 30px #d8dde0;
+    z-index: 1;
+}
+
+.link {
+    z-index: 2;
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    bottom: -4px;
+    height: 3px;
+    width: calc(100% + 6px);
+    background-color: #8bc34a;
+}
+
+.avatar {
+    border-radius: 100%;
+    margin-top: 48px;
+}
+
+.settingsIcon {
+    background-color: white;
+    position: absolute;
+    right: 50px;
+    top: 105px;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px #dfdfdf;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,73 @@
+.order {
+    width: 100%;
+    max-width: 1434px;
+    height: 74px;
+    border: 1px solid #cfd8dc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order:hover {
+    box-shadow: 0 10px 20px #e6e8e9;
+    transition: 0.2s;
+}
+
+.title {
+    margin-left: 35px;
+    color: var(--color-text-dark-blue);
+    max-width: 680px;
+    font-size: 20px;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    bottom: 0px;
+    height: 1px;
+    width: calc(100% + 2px);
+    background-color: var(--color-light-gray);
+}
+
+.productCount {
+    font-size: 20px;
+    color: var(--color-text-dark-blue);
+}
+
+.productText {
+    color: var(--color-light-gray);
+    font-weight: 500;
+}
+
+.dateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dateFull {
+    color: var(--color-text-dark-blue);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dateShort {
+    color: var(--color-light-gray);
+    font-size: 10px;
+}
+
+.usdPriceText {
+    color: var(--color-light-gray);
+    font-size: 10px;
+}
+
+.uahPriceText {
+    color: var(--color-text-dark-blue);
+    font-size: 14px;
+    font-weight: 600;
+}

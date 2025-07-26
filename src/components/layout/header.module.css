@@ -1,0 +1,60 @@
+.header {
+    position: relative;
+    box-shadow: 0 0 30px #d8dde0;
+    height: var(--header-height);
+    width: 100%;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+}
+
+.rightSide {
+    margin-right: 162px;
+    height: var(--header-height);
+}
+
+.rightSideText {
+    color: #2c3c44;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.data {
+    align-items: center;
+}
+
+.dataText {
+    margin-right: 20px;
+}
+
+.dayText {
+    margin: 14px 0 6px 0;
+}
+
+.timeIcon {
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 200px;
+}
+
+.title {
+    color: #7cb342;
+    font-weight: 700;
+    margin-left: 19px;
+    font-size: 14px;
+}
+
+.search {
+    margin-left: 153px;
+    margin-right: 50px;
+    width: 414px;
+    height: 30px;
+}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
+import NavMenu from "@/components/layout/NavMenu";
 
 export const metadata: Metadata = {
     title: "dZENcode",
@@ -14,8 +15,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <Header />
-            <body>{children}</body>
+            <body>
+                <Header />
+                <div className="flex">
+                    <NavMenu />
+                    {children}
+                </div>
+            </body>
         </html>
     );
 }
