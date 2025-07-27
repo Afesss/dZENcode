@@ -1,0 +1,143 @@
+.product {
+    width: 1666px;
+    height: 48px;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 5px;
+    margin: 0 auto 6px auto;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    margin-left: 24px;
+}
+
+.greenBackgroud {
+    background-color: #cddc39;
+}
+
+.blackBackground {
+    background-color: #2c3c44;
+}
+
+.icon {
+    margin-left: 20px;
+}
+
+.titleContainer {
+    margin-left: 20px;
+    width: 284px;
+}
+
+.titleText {
+    color: #47555b;
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.titleText::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    height: 1px;
+    width: calc(100% + 2px);
+    background-color: var(--color-light-gray);
+}
+
+.serialNumberText {
+    color: #aab9c1;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.statusText {
+    font-size: 10px;
+    margin-left: 30px;
+    min-width: 50px;
+}
+
+.textGreen {
+    color: #d2e04f;
+}
+
+.textBlack {
+    color: #3b4a51;
+}
+
+.guaranteeContainer {
+    margin-left: 36px;
+    font-size: 10px;
+    color: #657c86;
+}
+
+.isNewText {
+    font-size: 10px;
+    color: #657c86;
+    margin-left: 34px;
+    min-width: 30px;
+}
+
+.priceContainer {
+    margin-left: 56px;
+    min-width: 80px;
+}
+
+.usdPriceText {
+    font-size: 8px;
+    color: #9aacb5;
+}
+
+.uahPriceText {
+    font-size: 12px;
+    color: #657c86;
+}
+
+.groupNameText {
+    margin-left: 28px;
+    min-width: 250px;
+    font-size: 12px;
+    color: #657c86;
+}
+
+.nameText {
+    width: 160px;
+    margin-left: 28px;
+}
+
+.orderTitleText {
+    font-size: 12px;
+    color: #657c86;
+    width: 246px;
+    margin-left: 26px;
+}
+
+.dateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95px;
+}
+
+.dateFull {
+    color: var(--color-text-dark-blue);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.dateShort {
+    color: var(--color-light-gray);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.trashIcon {
+    margin-left: 26px;
+    cursor: pointer;
+}

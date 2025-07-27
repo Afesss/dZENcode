@@ -1,0 +1,55 @@
+.page {
+    width: calc(100vw - var(--nav-menu-width));
+    height: calc(100vh - var(--header-height));
+    overflow: auto;
+    scrollbar-color: var(--color-light-gray) #ffffff;
+}
+
+.content {
+    position: relative;
+    margin: 0 10px 0 10px;
+    height: 100%;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    max-width: 1436px;
+    margin: 68px auto 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    color: #2c3c44;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.typeContainer {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.specificationContainer {
+    display: flex;
+    margin-left: 25px;
+    align-items: center;
+}
+
+.dropdownTitleText {
+    color: var(--color-light-gray);
+    font-size: 12px;
+}
+
+.dropdown {
+    width: 220px;
+    height: 20px;
+    margin-left: 6px;
+}
+
+.productsContainer {
+    width: 100%;
+    height: calc(100% - 167px);
+    margin-top: 44px;
+}

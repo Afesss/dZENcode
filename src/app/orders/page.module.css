@@ -1,16 +1,25 @@
 .page {
     width: calc(100vw - var(--nav-menu-width));
     height: calc(100vh - var(--header-height));
-    position: relative;
+    overflow: hidden;
 }
 
-.titleParent {
-    margin: 68px 0 0 125px;
+.content {
+    position: relative;
+    margin: 0 10px 0 10px;
+    height: 100%;
+}
+
+.titleContainer {
     display: flex;
     align-items: center;
+    max-width: 1436px;
+    margin: 68px auto 0 auto;
 }
 
 .titleIcon {
+    min-width: 39px;
+    min-height: 39px;
     width: 39px;
     height: 39px;
     background-color: #75a34b;
@@ -36,16 +45,14 @@
     font-weight: 700;
     color: #2c3c44;
     font-size: 30px;
+    white-space: nowrap;
 }
 
 .ordersContainer {
     height: calc(100% - 167px);
-    margin: 60px 0 0 126px;
+    padding: 30px 0;
+    max-width: 1436px;
+    margin: 30px auto;
     overflow: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.ordersContainer::-webkit-scrollbar {
-    display: none;
+    scrollbar-color: var(--color-light-gray) #ffffff;
 }

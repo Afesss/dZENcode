@@ -1,6 +1,4 @@
 .order {
-    width: 100%;
-    max-width: 1434px;
     height: 74px;
     border: 1px solid #cfd8dc;
     border-radius: 5px;
@@ -9,6 +7,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+
+.centerContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 10px;
 }
 
 .order:hover {
@@ -16,12 +22,21 @@
     transition: 0.2s;
 }
 
+.titleContainer {
+    width: 578px;
+    min-width: 500px;
+}
+
 .title {
+    display: inline-block;
     margin-left: 35px;
     color: var(--color-text-dark-blue);
-    max-width: 680px;
     font-size: 20px;
     position: relative;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .title::after {
@@ -32,6 +47,10 @@
     height: 1px;
     width: calc(100% + 2px);
     background-color: var(--color-light-gray);
+}
+
+.productCountContainer {
+    margin: 0 70px 0 20px;
 }
 
 .productCount {
@@ -48,26 +67,61 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 120px;
 }
 
 .dateFull {
     color: var(--color-text-dark-blue);
     font-size: 14px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .dateShort {
     color: var(--color-light-gray);
     font-size: 10px;
+    white-space: nowrap;
 }
 
 .usdPriceText {
     color: var(--color-light-gray);
     font-size: 10px;
+    white-space: nowrap;
 }
 
 .uahPriceText {
     color: var(--color-text-dark-blue);
     font-size: 14px;
     font-weight: 600;
+    white-space: nowrap;
 }
+
+.trashIcon {
+    margin-right: 36px;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 44px;
+    height: 100%;
+    background-color: #cfd8dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+}
+
+/* @media (max-width: 1440px) {
+    .trashIcon {
+        margin-right: 10px;
+    }
+
+    .dateContainer {
+        margin-right: 10px;
+    }
+
+    .productCountContainer {
+        margin: 0 10px 0 10px;
+    }
+} */

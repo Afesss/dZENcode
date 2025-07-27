@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import NavMenu from "@/components/layout/NavMenu";
+import DeleteModal from "@/components/layout/DeleteModal";
+import ReduxProvider from "@/components/layout/ReduxProvider";
 
 export const metadata: Metadata = {
     title: "dZENcode",
@@ -16,11 +18,14 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <Header />
-                <div className="flex">
-                    <NavMenu />
-                    {children}
-                </div>
+                <ReduxProvider>
+                    <DeleteModal />
+                    <Header />
+                    <div className="flex">
+                        <NavMenu />
+                        {children}
+                    </div>
+                </ReduxProvider>
             </body>
         </html>
     );

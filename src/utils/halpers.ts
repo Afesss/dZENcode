@@ -1,4 +1,4 @@
-export function getFormatDataWhithSlash(dateStr: string): string {
+export function getFormatDataWhithSlashFullMonth(dateStr: string): string {
     const date = new Date(dateStr);
 
     const formatted = new Intl.DateTimeFormat("ru-RU", {
@@ -8,9 +8,28 @@ export function getFormatDataWhithSlash(dateStr: string): string {
     }).format(date);
     const parts = formatted.split(" ");
     if (parts.length > 3) {
-        const result = `${parts[0]} / ${capitalizeFirstLetter(parts[1])} / ${
-            parts[2]
-        }`;
+        const result = `${parts[0]} / ${capitalizeFirstLetter(parts[1]).slice(
+            0,
+            3
+        )} / ${parts[2]}`;
+        return result;
+    } else {
+        console.error("failed formatted.split", parts);
+        return "";
+    }
+}
+
+export function getFormatDataWhithSlashNumberMonth(dateStr: string): string {
+    const date = new Date(dateStr);
+
+    const formatted: string = new Intl.DateTimeFormat("ru-RU", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+    }).format(date);
+    const parts = formatted.split(".");
+    if (parts.length >= 3) {
+        const result = `${parts[0]} / ${parts[1]} / ${parts[2]}`;
         return result;
     } else {
         console.error("failed formatted.split", parts);

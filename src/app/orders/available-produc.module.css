@@ -1,0 +1,80 @@
+.container {
+    height: 56px;
+    border: 1px solid #f0f3f5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+}
+
+.container:hover {
+    border: 1px solid #cfd8dc;
+    box-shadow: 0 0 30px rgba(199, 199, 199, 0.3);
+}
+
+.circle {
+    min-width: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #cddc39;
+    border-radius: 100%;
+    margin-left: 43px;
+    margin-right: 32px;
+}
+
+.icon {
+    min-width: 44px;
+}
+.titleContainer {
+    margin-left: 34px;
+}
+
+.producTitleText {
+    color: #47555b;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+}
+
+.producTitleText::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    height: 1px;
+    width: calc(100% + 2px);
+    background-color: var(--color-light-gray);
+}
+
+.productSerialNumberText {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #aab9c1;
+    font-weight: 600;
+}
+
+.freeText {
+    color: #d4e160;
+    min-width: 84px;
+    margin-left: 78px;
+}
+
+.trashIcon {
+    margin-right: 36px;
+    margin-left: 60px;
+}
+
+.textGreen {
+    color: #d2e04f;
+}
+
+.textBlack {
+    color: #3b4a51;
+}
