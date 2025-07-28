@@ -4,7 +4,12 @@ import styles from "./header.module.css";
 import Image from "next/image";
 import Search from "./Search";
 import { useEffect, useState } from "react";
-import { getFormatDate, getFormatDay, getFormatTime } from "@/utils/halpers";
+import {
+    basePath,
+    getFormatDate,
+    getFormatDay,
+    getFormatTime,
+} from "@/utils/halpers";
 import axios from "axios";
 import { io } from "socket.io-client";
 
@@ -24,8 +29,9 @@ export default function Header() {
     const [onlineUsers, setOnlineUsers] = useState<number>(0);
 
     useEffect(() => {
-        axios.get("/api/socket");
-        const socket = io({ path: "/api/socket" });
+        console.log(basePath);
+        axios.get(`${basePath}/api/socket`);
+        const socket = io({ path: `${basePath}/api/socket` });
         socket.on("connect", () => {
             console.log("🟢 Socket connected");
         });
@@ -52,7 +58,7 @@ export default function Header() {
             <div className={styles.leftSide}>
                 <Link href="/" className={styles.logo}>
                     <Image
-                        src="/icons/icon.png"
+                        src={`${basePath}/icons/icon.png`}
                         alt="icon"
                         width={36}
                         height={44}
@@ -78,7 +84,7 @@ export default function Header() {
                     </p>
                     <Image
                         className={styles.timeIcon}
-                        src="/icons/time-icon.png"
+                        src={`${basePath}/icons/time-icon.png`}
                         alt="time icon"
                         width={15}
                         height={15}

@@ -6,6 +6,7 @@ import { MouseEvent } from "react";
 import { useAppDispatch } from "@/utils/redux/hooks";
 import { showDeleteModal } from "@/utils/redux/slices/delete-modal-slice";
 import { deleteProductMessage } from "../products/Product";
+import { basePath } from "@/utils/halpers";
 
 interface Props {
     product: ProductData;
@@ -33,7 +34,7 @@ export default function AvailableProduct(props: Props) {
             <div className={styles.leftSide}>
                 <div className={styles.circle}></div>
                 <Image
-                    src={`${props.product.photo}`}
+                    src={`${basePath}${props.product.photo}`}
                     alt="icon"
                     width={44}
                     height={30}
@@ -61,7 +62,7 @@ export default function AvailableProduct(props: Props) {
                 {props.product.isNew === 0 ? "В ремонете" : "Свободен"}
             </p>
             <Image
-                src="/icons/trash-icon.png"
+                src={`${basePath}/icons/trash-icon.png`}
                 alt="trash icon"
                 width={12}
                 height={13}

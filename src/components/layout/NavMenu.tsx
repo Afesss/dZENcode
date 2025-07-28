@@ -4,6 +4,7 @@ import styles from "./nav-menu.module.css";
 import { usePathname } from "next/navigation";
 import { useRef } from "react";
 import Image from "next/image";
+import { basePath } from "@/utils/halpers";
 
 const links = [
     { href: "/orders", label: "ПРИХОД" },
@@ -19,7 +20,7 @@ export default function NavMenu() {
     return (
         <div className={styles.navPanel}>
             <Image
-                src="/avatar.jpg"
+                src={`${basePath}/avatar.jpg`}
                 alt="avatar"
                 width={95}
                 height={95}
@@ -27,7 +28,7 @@ export default function NavMenu() {
             />
             <div className={styles.settingsIcon}>
                 <Image
-                    src="/icons/settings-icon.png"
+                    src={`${basePath}/icons/settings-icon.png`}
                     alt="settings icon"
                     width={15}
                     height={15}

@@ -2,6 +2,7 @@ import { ProductData } from "@/api/product-api";
 import styles from "./product.module.css";
 import Image from "next/image";
 import {
+    basePath,
     getFormatDataToDayMonth,
     getFormatDataWhithSlashFullMonth,
     getFormatDataWhithSlashNumberMonth,
@@ -72,7 +73,7 @@ export default function Product(props: Props) {
                 }`}
             ></div>
             <Image
-                src={`${props.product.photo}`}
+                src={`${basePath}${props.product.photo}`}
                 alt="icon"
                 width={30}
                 height={20}
@@ -134,7 +135,7 @@ export default function Product(props: Props) {
                 </p>
             </div>
             <Image
-                src="/icons/trash-icon.png"
+                src={`${basePath}/icons/trash-icon.png`}
                 alt="trash icon"
                 width={12}
                 height={14}

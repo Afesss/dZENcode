@@ -3,6 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { Server as HTTPServer } from "http";
 import { Server as IOServer } from "socket.io";
 import { Socket as NetSocket } from "net";
+import { basePath } from "@/utils/halpers";
 
 type NextApiResponseWithSocket = NextApiResponse & {
     socket: NetSocket & {
@@ -23,7 +24,7 @@ export default function handler(
         console.log("🟢 Socket.io server start...");
 
         io = new Server(res.socket.server, {
-            path: "/api/socket",
+            path: `${basePath}/api/socket`,
         });
 
         io.on("connection", (socket) => {

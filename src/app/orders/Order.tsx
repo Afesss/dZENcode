@@ -4,6 +4,7 @@ import { deleteProductApi, ProductData } from "@/api/product-api";
 import styles from "./order.module.css";
 import OrderIcon from "./OrderIcon";
 import {
+    basePath,
     getFormatDataToDayMonth,
     getFormatDataWhithSlashFullMonth,
     getFormatNumber,
@@ -126,7 +127,7 @@ export default function Order(props: Props) {
 
             {!props.shortLength && (
                 <Image
-                    src="/icons/trash-icon.png"
+                    src={`${basePath}/icons/trash-icon.png`}
                     alt="trash icon"
                     width={12}
                     height={14}

@@ -1,3 +1,5 @@
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export function getFormatDataWhithSlashFullMonth(dateStr: string): string {
     const date = new Date(dateStr);
 

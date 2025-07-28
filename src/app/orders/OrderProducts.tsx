@@ -4,6 +4,7 @@ import styles from "./order-product.module.css";
 import Image from "next/image";
 import { MouseEvent } from "react";
 import { motion } from "motion/react";
+import { basePath } from "@/utils/halpers";
 interface Props {
     orderTitle: string;
     products: ProductData[];
@@ -47,7 +48,7 @@ export default function OrderProducts(props: Props) {
             </div>
             <button className={styles.closeButton} onClick={handleCloseClick}>
                 <Image
-                    src="/icons/close-icon.svg"
+                    src={`${basePath}/icons/close-icon.svg`}
                     alt="close icon"
                     width={18}
                     height={18}
