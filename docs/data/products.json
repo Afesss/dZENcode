@@ -1,0 +1,1602 @@
+[
+    {
+        "id": 1,
+        "serialNumber": 9264,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 1",
+        "type": "Monitors",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2025-07-05 00:00:00",
+            "end": "2026-04-03 00:00:00"
+        },
+        "price": [
+            {
+                "value": 72,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 2808,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 79.2,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 5,
+        "date": "2020-12-27 00:00:00"
+    },
+    {
+        "id": 2,
+        "serialNumber": 5494,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 2",
+        "type": "Monitors",
+        "specification": "Specification 5",
+        "guarantee": {
+            "start": "2023-10-22 00:00:00",
+            "end": "2026-06-17 00:00:00"
+        },
+        "price": [
+            {
+                "value": 489,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 19071,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 537.9,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 19,
+        "date": "2018-05-03 00:00:00"
+    },
+    {
+        "id": 3,
+        "serialNumber": 1187,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 3",
+        "type": "Monitors",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2017-10-21 00:00:00",
+            "end": "2018-07-15 00:00:00"
+        },
+        "price": [
+            {
+                "value": 388,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 15132,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 426.8,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 8,
+        "date": "2022-01-06 00:00:00"
+    },
+    {
+        "id": 4,
+        "serialNumber": 6692,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 4",
+        "type": "Keyboards",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2021-05-07 00:00:00",
+            "end": "2023-10-16 00:00:00"
+        },
+        "price": [
+            {
+                "value": 284,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 11076,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 312.4,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 16,
+        "date": "2023-03-24 00:00:00"
+    },
+    {
+        "id": 5,
+        "serialNumber": 2960,
+        "isNew": 1,
+        "photo": "/keyboard.png",
+        "title": "Product 5",
+        "type": "Keyboards",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2018-06-03 00:00:00",
+            "end": "2021-02-15 00:00:00"
+        },
+        "price": [
+            {
+                "value": 265,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 10335,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 291.5,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 16,
+        "date": "2015-03-16 00:00:00"
+    },
+    {
+        "id": 6,
+        "serialNumber": 6647,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 6",
+        "type": "Monitors",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2024-12-25 00:00:00",
+            "end": "2025-10-28 00:00:00"
+        },
+        "price": [
+            {
+                "value": 216,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 8424,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 237.6,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 18,
+        "date": "2018-06-10 00:00:00"
+    },
+    {
+        "id": 7,
+        "serialNumber": 4478,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 7",
+        "type": "Monitors",
+        "specification": "Specification 1",
+        "guarantee": {
+            "start": "2025-07-21 00:00:00",
+            "end": "2026-02-26 00:00:00"
+        },
+        "price": [
+            {
+                "value": 217,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 8463,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 238.7,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 14,
+        "date": "2022-01-23 00:00:00"
+    },
+    {
+        "id": 8,
+        "serialNumber": 2768,
+        "isNew": 1,
+        "photo": "/keyboard.png",
+        "title": "Product 8",
+        "type": "Keyboards",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2018-07-13 00:00:00",
+            "end": "2019-04-12 00:00:00"
+        },
+        "price": [
+            {
+                "value": 398,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 15522,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 437.8,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 1,
+        "date": "2023-05-15 00:00:00"
+    },
+    {
+        "id": 9,
+        "serialNumber": 3508,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 9",
+        "type": "Monitors",
+        "specification": "Specification 1",
+        "guarantee": {
+            "start": "2016-10-28 00:00:00",
+            "end": "2018-03-25 00:00:00"
+        },
+        "price": [
+            {
+                "value": 240,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 9360,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 264.0,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 3,
+        "date": "2021-02-23 00:00:00"
+    },
+    {
+        "id": 10,
+        "serialNumber": 8895,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 10",
+        "type": "Monitors",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2018-12-14 00:00:00",
+            "end": "2021-10-08 00:00:00"
+        },
+        "price": [
+            {
+                "value": 88,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 3432,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 96.8,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 20,
+        "date": "2022-09-27 00:00:00"
+    },
+    {
+        "id": 11,
+        "serialNumber": 2273,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 11",
+        "type": "Monitors",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2025-02-19 00:00:00",
+            "end": "2026-06-06 00:00:00"
+        },
+        "price": [
+            {
+                "value": 242,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 9438,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 266.2,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 11,
+        "date": "2020-07-10 00:00:00"
+    },
+    {
+        "id": 12,
+        "serialNumber": 4748,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 12",
+        "type": "Keyboards",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2018-07-14 00:00:00",
+            "end": "2019-11-11 00:00:00"
+        },
+        "price": [
+            {
+                "value": 54,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 2106,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 59.4,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 12,
+        "date": "2019-06-24 00:00:00"
+    },
+    {
+        "id": 13,
+        "serialNumber": 4586,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 13",
+        "type": "Keyboards",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2020-02-27 00:00:00",
+            "end": "2022-12-08 00:00:00"
+        },
+        "price": [
+            {
+                "value": 190,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 7410,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 209.0,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 9,
+        "date": "2015-03-31 00:00:00"
+    },
+    {
+        "id": 14,
+        "serialNumber": 7322,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 14",
+        "type": "Keyboards",
+        "specification": "Specification 1",
+        "guarantee": {
+            "start": "2022-11-10 00:00:00",
+            "end": "2025-06-21 00:00:00"
+        },
+        "price": [
+            {
+                "value": 450,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 17550,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 495.0,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 3,
+        "date": "2024-06-16 00:00:00"
+    },
+    {
+        "id": 15,
+        "serialNumber": 7307,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 15",
+        "type": "Monitors",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2019-12-24 00:00:00",
+            "end": "2021-12-29 00:00:00"
+        },
+        "price": [
+            {
+                "value": 281,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 10959,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 309.1,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 10,
+        "date": "2017-05-17 00:00:00"
+    },
+    {
+        "id": 16,
+        "serialNumber": 7514,
+        "isNew": 1,
+        "photo": "/keyboard.png",
+        "title": "Product 16",
+        "type": "Keyboards",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2021-08-14 00:00:00",
+            "end": "2022-02-20 00:00:00"
+        },
+        "price": [
+            {
+                "value": 259,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 10101,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 284.9,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 6,
+        "date": "2021-08-30 00:00:00"
+    },
+    {
+        "id": 17,
+        "serialNumber": 5903,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 17",
+        "type": "Monitors",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2023-05-01 00:00:00",
+            "end": "2025-07-08 00:00:00"
+        },
+        "price": [
+            {
+                "value": 227,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 8853,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 249.7,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 2,
+        "date": "2019-08-28 00:00:00"
+    },
+    {
+        "id": 18,
+        "serialNumber": 7674,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 18",
+        "type": "Monitors",
+        "specification": "Specification 1",
+        "guarantee": {
+            "start": "2018-05-04 00:00:00",
+            "end": "2020-06-23 00:00:00"
+        },
+        "price": [
+            {
+                "value": 235,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 9165,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 258.5,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 2,
+        "date": "2024-09-01 00:00:00"
+    },
+    {
+        "id": 19,
+        "serialNumber": 8804,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 19",
+        "type": "Monitors",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2021-07-05 00:00:00",
+            "end": "2023-03-20 00:00:00"
+        },
+        "price": [
+            {
+                "value": 139,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 5421,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 152.9,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 13,
+        "date": "2020-09-05 00:00:00"
+    },
+    {
+        "id": 20,
+        "serialNumber": 7058,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 20",
+        "type": "Monitors",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2024-11-15 00:00:00",
+            "end": "2026-06-15 00:00:00"
+        },
+        "price": [
+            {
+                "value": 75,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 2925,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 82.5,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 20,
+        "date": "2024-01-20 00:00:00"
+    },
+    {
+        "id": 21,
+        "serialNumber": 6813,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 21",
+        "type": "Monitors",
+        "specification": "Specification 1",
+        "guarantee": {
+            "start": "2015-10-12 00:00:00",
+            "end": "2017-09-11 00:00:00"
+        },
+        "price": [
+            {
+                "value": 85,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 3315,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 93.5,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 1,
+        "date": "2019-07-31 00:00:00"
+    },
+    {
+        "id": 22,
+        "serialNumber": 7845,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 22",
+        "type": "Keyboards",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2025-05-15 00:00:00",
+            "end": "2025-07-14 00:00:00"
+        },
+        "price": [
+            {
+                "value": 312,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 12168,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 343.2,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 7,
+        "date": "2025-03-24 00:00:00"
+    },
+    {
+        "id": 23,
+        "serialNumber": 3307,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 23",
+        "type": "Keyboards",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2025-01-27 00:00:00",
+            "end": "2025-09-23 00:00:00"
+        },
+        "price": [
+            {
+                "value": 159,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 6201,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 174.9,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 10,
+        "date": "2019-12-16 00:00:00"
+    },
+    {
+        "id": 24,
+        "serialNumber": 6111,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 24",
+        "type": "Monitors",
+        "specification": "Specification 5",
+        "guarantee": {
+            "start": "2016-05-12 00:00:00",
+            "end": "2017-09-12 00:00:00"
+        },
+        "price": [
+            {
+                "value": 379,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 14781,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 416.9,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 3,
+        "date": "2020-12-08 00:00:00"
+    },
+    {
+        "id": 25,
+        "serialNumber": 2419,
+        "isNew": 1,
+        "photo": "/keyboard.png",
+        "title": "Product 25",
+        "type": "Keyboards",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2024-08-08 00:00:00",
+            "end": "2025-01-30 00:00:00"
+        },
+        "price": [
+            {
+                "value": 270,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 10530,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 297.0,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 9,
+        "date": "2025-04-23 00:00:00"
+    },
+    {
+        "id": 26,
+        "serialNumber": 6745,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 26",
+        "type": "Monitors",
+        "specification": "Specification 5",
+        "guarantee": {
+            "start": "2021-08-01 00:00:00",
+            "end": "2023-01-23 00:00:00"
+        },
+        "price": [
+            {
+                "value": 253,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 9867,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 278.3,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 20,
+        "date": "2017-04-04 00:00:00"
+    },
+    {
+        "id": 27,
+        "serialNumber": 8010,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 27",
+        "type": "Keyboards",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2023-01-17 00:00:00",
+            "end": "2025-10-01 00:00:00"
+        },
+        "price": [
+            {
+                "value": 492,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 19188,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 541.2,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 11,
+        "date": "2024-09-04 00:00:00"
+    },
+    {
+        "id": 28,
+        "serialNumber": 8876,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 28",
+        "type": "Keyboards",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2016-03-02 00:00:00",
+            "end": "2017-01-24 00:00:00"
+        },
+        "price": [
+            {
+                "value": 171,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 6669,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 188.1,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 1,
+        "date": "2022-11-24 00:00:00"
+    },
+    {
+        "id": 29,
+        "serialNumber": 9374,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 29",
+        "type": "Monitors",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2018-04-10 00:00:00",
+            "end": "2020-08-22 00:00:00"
+        },
+        "price": [
+            {
+                "value": 453,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 17667,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 498.3,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 18,
+        "date": "2024-09-19 00:00:00"
+    },
+    {
+        "id": 30,
+        "serialNumber": 2271,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 30",
+        "type": "Keyboards",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2024-10-18 00:00:00",
+            "end": "2026-04-17 00:00:00"
+        },
+        "price": [
+            {
+                "value": 209,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 8151,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 229.9,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 9,
+        "date": "2023-10-10 00:00:00"
+    },
+    {
+        "id": 31,
+        "serialNumber": 9616,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 31",
+        "type": "Monitors",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2019-12-30 00:00:00",
+            "end": "2022-09-24 00:00:00"
+        },
+        "price": [
+            {
+                "value": 379,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 14781,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 416.9,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 7,
+        "date": "2025-02-10 00:00:00"
+    },
+    {
+        "id": 32,
+        "serialNumber": 3273,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 32",
+        "type": "Keyboards",
+        "specification": "Specification 1",
+        "guarantee": {
+            "start": "2016-09-16 00:00:00",
+            "end": "2018-08-03 00:00:00"
+        },
+        "price": [
+            {
+                "value": 186,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 7254,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 204.6,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 15,
+        "date": "2021-08-11 00:00:00"
+    },
+    {
+        "id": 33,
+        "serialNumber": 2533,
+        "isNew": 1,
+        "photo": "/keyboard.png",
+        "title": "Product 33",
+        "type": "Keyboards",
+        "specification": "Specification 5",
+        "guarantee": {
+            "start": "2015-05-28 00:00:00",
+            "end": "2017-08-16 00:00:00"
+        },
+        "price": [
+            {
+                "value": 486,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 18954,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 534.6,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 1,
+        "date": "2025-05-14 00:00:00"
+    },
+    {
+        "id": 34,
+        "serialNumber": 2141,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 34",
+        "type": "Monitors",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2015-03-26 00:00:00",
+            "end": "2017-08-31 00:00:00"
+        },
+        "price": [
+            {
+                "value": 459,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 17901,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 504.9,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 2,
+        "date": "2017-03-07 00:00:00"
+    },
+    {
+        "id": 35,
+        "serialNumber": 1240,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 35",
+        "type": "Monitors",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2022-01-07 00:00:00",
+            "end": "2023-01-05 00:00:00"
+        },
+        "price": [
+            {
+                "value": 306,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 11934,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 336.6,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 20,
+        "date": "2021-09-15 00:00:00"
+    },
+    {
+        "id": 36,
+        "serialNumber": 1258,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 36",
+        "type": "Keyboards",
+        "specification": "Specification 1",
+        "guarantee": {
+            "start": "2016-10-20 00:00:00",
+            "end": "2017-10-27 00:00:00"
+        },
+        "price": [
+            {
+                "value": 341,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 13299,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 375.1,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 14,
+        "date": "2021-03-11 00:00:00"
+    },
+    {
+        "id": 37,
+        "serialNumber": 4213,
+        "isNew": 1,
+        "photo": "/keyboard.png",
+        "title": "Product 37",
+        "type": "Keyboards",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2024-05-25 00:00:00",
+            "end": "2024-10-29 00:00:00"
+        },
+        "price": [
+            {
+                "value": 284,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 11076,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 312.4,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 10,
+        "date": "2025-05-22 00:00:00"
+    },
+    {
+        "id": 38,
+        "serialNumber": 3642,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 38",
+        "type": "Monitors",
+        "specification": "Specification 5",
+        "guarantee": {
+            "start": "2020-04-22 00:00:00",
+            "end": "2020-09-11 00:00:00"
+        },
+        "price": [
+            {
+                "value": 244,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 9516,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 268.4,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 8,
+        "date": "2018-03-09 00:00:00"
+    },
+    {
+        "id": 39,
+        "serialNumber": 5180,
+        "isNew": 1,
+        "photo": "/keyboard.png",
+        "title": "Product 39",
+        "type": "Keyboards",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2021-02-13 00:00:00",
+            "end": "2023-07-17 00:00:00"
+        },
+        "price": [
+            {
+                "value": 103,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 4017,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 113.3,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 4,
+        "date": "2015-07-23 00:00:00"
+    },
+    {
+        "id": 40,
+        "serialNumber": 2187,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 40",
+        "type": "Monitors",
+        "specification": "Specification 1",
+        "guarantee": {
+            "start": "2020-08-11 00:00:00",
+            "end": "2023-07-20 00:00:00"
+        },
+        "price": [
+            {
+                "value": 184,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 7176,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 202.4,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 5,
+        "date": "2018-12-04 00:00:00"
+    },
+    {
+        "id": 41,
+        "serialNumber": 5179,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 41",
+        "type": "Keyboards",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2019-04-17 00:00:00",
+            "end": "2020-08-23 00:00:00"
+        },
+        "price": [
+            {
+                "value": 303,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 11817,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 333.3,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 13,
+        "date": "2024-07-09 00:00:00"
+    },
+    {
+        "id": 42,
+        "serialNumber": 7701,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 42",
+        "type": "Keyboards",
+        "specification": "Specification 1",
+        "guarantee": {
+            "start": "2016-05-23 00:00:00",
+            "end": "2019-03-22 00:00:00"
+        },
+        "price": [
+            {
+                "value": 166,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 6474,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 182.6,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 19,
+        "date": "2023-10-18 00:00:00"
+    },
+    {
+        "id": 43,
+        "serialNumber": 7088,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 43",
+        "type": "Keyboards",
+        "specification": "Specification 4",
+        "guarantee": {
+            "start": "2018-10-05 00:00:00",
+            "end": "2019-07-13 00:00:00"
+        },
+        "price": [
+            {
+                "value": 186,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 7254,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 204.6,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 20,
+        "date": "2015-05-07 00:00:00"
+    },
+    {
+        "id": 44,
+        "serialNumber": 1676,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 44",
+        "type": "Monitors",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2024-10-13 00:00:00",
+            "end": "2027-09-30 00:00:00"
+        },
+        "price": [
+            {
+                "value": 183,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 7137,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 201.3,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 7,
+        "date": "2019-07-20 00:00:00"
+    },
+    {
+        "id": 45,
+        "serialNumber": 2094,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 45",
+        "type": "Monitors",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2017-06-22 00:00:00",
+            "end": "2018-06-20 00:00:00"
+        },
+        "price": [
+            {
+                "value": 187,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 7293,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 205.7,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 15,
+        "date": "2021-05-30 00:00:00"
+    },
+    {
+        "id": 46,
+        "serialNumber": 9538,
+        "isNew": 0,
+        "photo": "/monitor.png",
+        "title": "Product 46",
+        "type": "Monitors",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2024-01-10 00:00:00",
+            "end": "2025-09-12 00:00:00"
+        },
+        "price": [
+            {
+                "value": 120,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 4680,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 132.0,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 11,
+        "date": "2018-12-10 00:00:00"
+    },
+    {
+        "id": 47,
+        "serialNumber": 9216,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 47",
+        "type": "Monitors",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2015-10-02 00:00:00",
+            "end": "2016-06-23 00:00:00"
+        },
+        "price": [
+            {
+                "value": 265,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 10335,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 291.5,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 4,
+        "date": "2021-04-01 00:00:00"
+    },
+    {
+        "id": 48,
+        "serialNumber": 1762,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 48",
+        "type": "Keyboards",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2021-08-20 00:00:00",
+            "end": "2023-01-21 00:00:00"
+        },
+        "price": [
+            {
+                "value": 292,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 11388,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 321.2,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 19,
+        "date": "2022-07-19 00:00:00"
+    },
+    {
+        "id": 49,
+        "serialNumber": 3507,
+        "isNew": 1,
+        "photo": "/monitor.png",
+        "title": "Product 49",
+        "type": "Monitors",
+        "specification": "Specification 2",
+        "guarantee": {
+            "start": "2025-08-17 00:00:00",
+            "end": "2028-06-07 00:00:00"
+        },
+        "price": [
+            {
+                "value": 173,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 6747,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 190.3,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 11,
+        "date": "2019-03-01 00:00:00"
+    },
+    {
+        "id": 50,
+        "serialNumber": 7557,
+        "isNew": 0,
+        "photo": "/keyboard.png",
+        "title": "Product 50",
+        "type": "Keyboards",
+        "specification": "Specification 3",
+        "guarantee": {
+            "start": "2023-05-15 00:00:00",
+            "end": "2024-11-02 00:00:00"
+        },
+        "price": [
+            {
+                "value": 191,
+                "symbol": "USD",
+                "isDefault": 0
+            },
+            {
+                "value": 7449,
+                "symbol": "UAH",
+                "isDefault": 1
+            },
+            {
+                "value": 210.1,
+                "symbol": "EUR",
+                "isDefault": 0
+            }
+        ],
+        "order": 17,
+        "date": "2015-12-12 00:00:00"
+    }
+]
