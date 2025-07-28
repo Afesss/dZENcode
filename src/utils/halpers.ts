@@ -52,6 +52,14 @@ export function getFormatTime(date: Date): string {
     }).format(date);
 }
 
+export function getFormatDay(date: Date) {
+    let day = new Intl.DateTimeFormat("ru-RU", {
+        weekday: "long",
+    }).format(date);
+    day = capitalizeFirstLetter(day);
+    return day;
+}
+
 export function getFormatDataToDayMonth(dateStr: string): string {
     const date = new Date(dateStr);
     const day = String(date.getDay()).padStart(2, "0");

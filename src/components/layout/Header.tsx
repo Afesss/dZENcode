@@ -4,28 +4,49 @@ import styles from "./header.module.css";
 import Image from "next/image";
 import Search from "./Search";
 import { useEffect, useState } from "react";
-import { getFormatDate, getFormatTime } from "@/utils/halpers";
-import { time } from "console";
+import { getFormatDate, getFormatDay, getFormatTime } from "@/utils/halpers";
+import axios from "axios";
+import { io } from "socket.io-client";
 
 type DateDatea = {
     date: string;
     time: string;
+    day: string;
 };
 
 export default function Header() {
     const [date, setDate] = useState<DateDatea>({
         date: getFormatDate(new Date()),
         time: getFormatTime(new Date()),
+        day: getFormatDay(new Date()),
     });
+
+    const [onlineUsers, setOnlineUsers] = useState<number>(0);
+
     useEffect(() => {
+        axios.get("/api/socket");
+        const socket = io({ path: "/api/socket" });
+        socket.on("connect", () => {
+            console.log("🟢 Socket connected");
+        });
+        socket.on("online-users", (data: number) => {
+            setOnlineUsers(data);
+        });
+
         const interval = setInterval(() => {
             const d = new Date();
-            setDate({ date: getFormatDate(d), time: getFormatTime(d) });
+            setDate({
+                date: getFormatDate(d),
+                time: getFormatTime(d),
+                day: getFormatDay(d),
+            });
         }, 1000);
         return () => {
+            socket.disconnect();
             clearInterval(interval);
         };
     }, []);
+
     return (
         <header className={styles.header}>
             <div className={styles.leftSide}>
@@ -41,9 +62,14 @@ export default function Header() {
                 <Search className={styles.search} />
             </div>
             <div className={styles.rightSide}>
-                <div>
+                <div className="flex">
                     <p className={`${styles.rightSideText} ${styles.dayText}`}>
-                        Вторник
+                        {date.day}
+                    </p>
+                    <p
+                        className={`${styles.onlineUsersText} ${styles.dayText} ${styles.rightSideText}`}
+                    >
+                        {"Online: " + onlineUsers}
                     </p>
                 </div>
                 <div className={`flex ${styles.data}`}>
