@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import { deleteOrderApi, getAllOrdersApi, OrderData } from "@/api/orders-api";
 import Order from "./Order";
-import { getAllProductsApi, ProductData } from "@/api/product-api";
+import {
+    deleteProductApi,
+    getAllProductsApi,
+    ProductData,
+} from "@/api/product-api";
 import Loader from "@/components/layout/Loader";
 import { useAppDispatch, useAppSelector } from "@/utils/redux/hooks";
 import { RootState } from "@/utils/redux/redux-store";
@@ -26,9 +30,21 @@ export default function OrdersPage() {
             filterOrders(data.orders);
         }
     }, [search]);
+
     useEffect(() => {
-        if (deleteModal.delete) {
-            deleteOrder(Number.parseInt(deleteModal.deleteItemId));
+        if (deleteModal.delete && data) {
+            const order = data.orders.find(
+                (order) => order.title === deleteModal.deleteItemTitle
+            );
+            const product = data.products.find(
+                (product) => product.title == deleteModal.deleteItemTitle
+            );
+            if (order) {
+                deleteOrder(Number.parseInt(deleteModal.deleteItemId));
+            }
+            if (product) {
+                deleteProduct(Number.parseInt(deleteModal.deleteItemId));
+            }
             dispatch(hideDeleteModal());
         }
     }, [deleteModal]);
@@ -36,6 +52,17 @@ export default function OrdersPage() {
     useEffect(() => {
         getDataFromServer();
     }, []);
+
+    const deleteProduct = async (id: number) => {
+        await deleteProductApi(id);
+        const productsFromBack = await getAllProductsApi();
+        if (productsFromBack) {
+            setData({
+                orders: data ? data.orders : [],
+                products: productsFromBack,
+            });
+        }
+    };
 
     const filterOrders = (orders: OrderData[]) => {
         const fOrders = orders.filter((order) =>
@@ -96,12 +123,10 @@ export default function OrdersPage() {
                                             showOrderProductsId === order.id
                                         }
                                         onShowOrderProducts={() => {
-                                            console.log("---");
                                             setOrderShortLength(true);
                                             setShowOrderProductsId(order.id);
                                         }}
                                         onHideOrderProducts={() => {
-                                            console.log("+++");
                                             setOrderShortLength(false);
                                             setShowOrderProductsId(null);
                                         }}

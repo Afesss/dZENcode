@@ -1,6 +1,11 @@
+"use client";
 import { ProductData } from "@/api/product-api";
 import styles from "./available-produc.module.css";
 import Image from "next/image";
+import { MouseEvent } from "react";
+import { useAppDispatch } from "@/utils/redux/hooks";
+import { showDeleteModal } from "@/utils/redux/slices/delete-modal-slice";
+import { deleteProductMessage } from "../products/Product";
 
 interface Props {
     product: ProductData;
@@ -8,6 +13,21 @@ interface Props {
 }
 
 export default function AvailableProduct(props: Props) {
+    const dispatch = useAppDispatch();
+
+    const handleDelete = (e: MouseEvent<HTMLImageElement>) => {
+        e.stopPropagation();
+        dispatch(
+            showDeleteModal({
+                message: deleteProductMessage,
+                deleteItemId: props.product.id.toString(),
+                deleteItemTitle: props.product.title,
+                deleteItemSerialNumber: props.product.serialNumber.toString(),
+                deleteIconPath: props.product.photo,
+            })
+        );
+    };
+
     return (
         <div className={styles.container}>
             <div className={styles.leftSide}>
@@ -46,6 +66,7 @@ export default function AvailableProduct(props: Props) {
                 width={12}
                 height={13}
                 className={styles.trashIcon}
+                onClick={(e) => handleDelete(e)}
             />
         </div>
     );

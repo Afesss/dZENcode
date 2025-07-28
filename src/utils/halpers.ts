@@ -37,6 +37,21 @@ export function getFormatDataWhithSlashNumberMonth(dateStr: string): string {
     }
 }
 
+export function getFormatDate(date: Date): string {
+    return new Intl.DateTimeFormat("ru-RU", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+    }).format(date);
+}
+
+export function getFormatTime(date: Date): string {
+    return new Intl.DateTimeFormat("ru-RU", {
+        hour: "2-digit",
+        minute: "2-digit",
+    }).format(date);
+}
+
 export function getFormatDataToDayMonth(dateStr: string): string {
     const date = new Date(dateStr);
     const day = String(date.getDay()).padStart(2, "0");

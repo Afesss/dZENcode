@@ -14,6 +14,7 @@ import { OrdersProductsData } from "../orders/page";
 import { useAppDispatch, useAppSelector } from "@/utils/redux/hooks";
 import { RootState } from "@/utils/redux/redux-store";
 import { hideDeleteModal } from "@/utils/redux/slices/delete-modal-slice";
+import { AnimatePresence } from "motion/react";
 
 export default function ProductsPage() {
     const [data, setData] = useState<OrdersProductsData | null>(null);
@@ -26,7 +27,14 @@ export default function ProductsPage() {
         useState<string>("All");
     const [filteredProducts, setFilteredProducts] = useState<ProductData[]>([]);
     const deleteModal = useAppSelector((state: RootState) => state.deleteModal);
+    const search = useAppSelector((state: RootState) => state.search);
     const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        if (data) {
+            filterProducts(data.products);
+        }
+    }, [search]);
 
     useEffect(() => {
         if (deleteModal.delete) {
@@ -81,6 +89,9 @@ export default function ProductsPage() {
     const filterProducts = (products: ProductData[]) => {
         const fProducts = products.filter((product) => {
             if (
+                !product.title
+                    .toLowerCase()
+                    .includes(search.value.toLowerCase()) ||
                 (typeFilter.toLowerCase() !== "all" &&
                     typeFilter !== product.type) ||
                 (specificationFilter.toLowerCase() !== "all" &&
@@ -122,15 +133,17 @@ export default function ProductsPage() {
                     </div>
                 </div>
                 <div className={styles.productsContainer}>
-                    {filteredProducts.map((product) => {
-                        return (
-                            <Product
-                                key={product.id}
-                                product={product}
-                                orders={data ? data.orders : []}
-                            />
-                        );
-                    })}
+                    <AnimatePresence>
+                        {filteredProducts.map((product) => {
+                            return (
+                                <Product
+                                    key={product.id}
+                                    product={product}
+                                    orders={data ? data.orders : []}
+                                />
+                            );
+                        })}
+                    </AnimatePresence>
                 </div>
                 {!data && <Loader />}
             </div>

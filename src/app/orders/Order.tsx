@@ -1,6 +1,6 @@
 "use client";
 import { OrderData } from "@/api/orders-api";
-import { ProductData } from "@/api/product-api";
+import { deleteProductApi, ProductData } from "@/api/product-api";
 import styles from "./order.module.css";
 import OrderIcon from "./OrderIcon";
 import {
@@ -10,11 +10,15 @@ import {
 } from "@/utils/halpers";
 import { CURRENSY_SYMBOLS } from "@/utils/constants";
 import Image from "next/image";
-import { useAppDispatch } from "@/utils/redux/hooks";
-import { showDeleteModal } from "@/utils/redux/slices/delete-modal-slice";
+import { useAppDispatch, useAppSelector } from "@/utils/redux/hooks";
+import {
+    hideDeleteModal,
+    showDeleteModal,
+} from "@/utils/redux/slices/delete-modal-slice";
 import { AnimatePresence, motion } from "motion/react";
-import { MouseEvent } from "react";
+import { MouseEvent, useEffect } from "react";
 import OrderProducts from "./OrderProducts";
+import { RootState } from "@/utils/redux/redux-store";
 
 interface Props {
     order: OrderData;
@@ -46,7 +50,8 @@ export default function Order(props: Props) {
         return `${getFormatNumber(fullPrice)} ${currencySymbol}`;
     };
 
-    const handleDelete = () => {
+    const handleDelete = (e: MouseEvent<HTMLImageElement>) => {
+        e.stopPropagation();
         dispatch(
             showDeleteModal({
                 message: constants.deleteMessage,
@@ -71,8 +76,18 @@ export default function Order(props: Props) {
             transition={{ duration: 0.2 }}
             style={
                 props.shortLength
-                    ? { width: "466px", minWidth: "400px", maxWidth: "466pxpx" }
-                    : { width: "100%", minWidth: "1100px", maxWidth: "1436px" }
+                    ? {
+                          width: "466px",
+                          minWidth: "400px",
+                          maxWidth: "466px",
+                          transformOrigin: "top",
+                      }
+                    : {
+                          width: "100%",
+                          minWidth: "1100px",
+                          maxWidth: "1436px",
+                          transformOrigin: "top",
+                      }
             }
             onClick={(e) => handleOnClick(e)}
         >
@@ -116,7 +131,7 @@ export default function Order(props: Props) {
                     width={12}
                     height={14}
                     className={styles.trashIcon}
-                    onClick={() => handleDelete()}
+                    onClick={(e) => handleDelete(e)}
                 />
             )}
             {props.showOrderProducts && (

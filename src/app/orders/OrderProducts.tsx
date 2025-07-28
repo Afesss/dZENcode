@@ -1,10 +1,9 @@
-import { ProductData } from "@/api/product-api";
+import { deleteProductApi, ProductData } from "@/api/product-api";
 import AvailableProduct from "./AvailableProduct";
 import styles from "./order-product.module.css";
 import Image from "next/image";
 import { MouseEvent } from "react";
 import { motion } from "motion/react";
-
 interface Props {
     orderTitle: string;
     products: ProductData[];

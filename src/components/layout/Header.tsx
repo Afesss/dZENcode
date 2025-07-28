@@ -1,9 +1,31 @@
+"use client";
 import Link from "next/link";
 import styles from "./header.module.css";
 import Image from "next/image";
 import Search from "./Search";
+import { useEffect, useState } from "react";
+import { getFormatDate, getFormatTime } from "@/utils/halpers";
+import { time } from "console";
+
+type DateDatea = {
+    date: string;
+    time: string;
+};
 
 export default function Header() {
+    const [date, setDate] = useState<DateDatea>({
+        date: getFormatDate(new Date()),
+        time: getFormatTime(new Date()),
+    });
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const d = new Date();
+            setDate({ date: getFormatDate(d), time: getFormatTime(d) });
+        }, 1000);
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
     return (
         <header className={styles.header}>
             <div className={styles.leftSide}>
@@ -26,7 +48,7 @@ export default function Header() {
                 </div>
                 <div className={`flex ${styles.data}`}>
                     <p className={`${styles.rightSideText} ${styles.dataText}`}>
-                        06 апр, 2025
+                        {date.date}
                     </p>
                     <Image
                         className={styles.timeIcon}
@@ -35,7 +57,7 @@ export default function Header() {
                         width={15}
                         height={15}
                     />
-                    <p className={`${styles.rightSideText}`}>17:20</p>
+                    <p className={`${styles.rightSideText}`}>{date.time}</p>
                 </div>
             </div>
         </header>

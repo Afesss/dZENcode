@@ -18,9 +18,8 @@ interface Props {
     orders: OrderData[];
 }
 
-const constants = {
-    deleteMessage: "Вы уверены, что хотите удалить этот продукт?",
-};
+export const deleteProductMessage =
+    "Вы уверены, что хотите удалить этот продукт?";
 
 export default function Product(props: Props) {
     const dispatch = useAppDispatch();
@@ -47,7 +46,7 @@ export default function Product(props: Props) {
     const handleDelete = () => {
         dispatch(
             showDeleteModal({
-                message: constants.deleteMessage,
+                message: deleteProductMessage,
                 deleteItemId: props.product.id.toString(),
                 deleteItemTitle: props.product.title,
                 deleteItemSerialNumber: props.product.serialNumber.toString(),
@@ -59,9 +58,11 @@ export default function Product(props: Props) {
     return (
         <motion.div
             className={styles.product}
-            initial={{ x: 1000 }}
-            animate={{ x: 0 }}
+            initial={{ height: 0, scaleY: 0 }}
+            animate={{ height: "48px", scaleY: 1 }}
+            exit={{ height: 0, scaleY: 0 }}
             transition={{ duration: 0.2 }}
+            style={{ transformOrigin: "top" }}
         >
             <div
                 className={`${styles.circle} ${
