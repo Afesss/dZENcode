@@ -29,6 +29,8 @@ export default function Header() {
     const [onlineUsers, setOnlineUsers] = useState<number>(0);
 
     useEffect(() => {
+        console.log(basePath);
+        console.log("Base path env:", process.env.NEXT_PUBLIC_BASE_PATH);
         axios.get(`${basePath}/api/socket`);
         const socket = io({ path: `${basePath}/api/socket` });
         socket.on("connect", () => {
