@@ -1,4 +1,5 @@
-export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/dZENcode";
+export const basePath =
+    process.env.NEXT_PUBLIC_BASE_PATH === "" ? "" : "/dZENcode";
 
 export function getFormatDataWhithSlashFullMonth(dateStr: string): string {
     const date = new Date(dateStr);
