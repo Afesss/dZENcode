@@ -8,6 +8,7 @@ import {
     hideDeleteModal,
 } from "@/utils/redux/slices/delete-modal-slice";
 import { AnimatePresence, motion } from "motion/react";
+import { basePath } from "@/utils/halpers";
 
 export default function DeleteModal() {
     const deleteModal = useAppSelector((state: RootState) => state.deleteModal);
@@ -34,7 +35,7 @@ export default function DeleteModal() {
                                 {deleteModal.deleteItemIconPath.trim() !==
                                     "" && (
                                     <Image
-                                        src={`${deleteModal.deleteItemIconPath}`}
+                                        src={`${basePath}${deleteModal.deleteItemIconPath}`}
                                         alt="icon"
                                         width={44}
                                         height={34}
@@ -65,7 +66,7 @@ export default function DeleteModal() {
                                     onClick={() => dispatch(deleteItem())}
                                 >
                                     <Image
-                                        src="/icons/red-trash-icon.png"
+                                        src={`${basePath}/icons/red-trash-icon.png`}
                                         alt="Trash icon"
                                         width={12}
                                         height={14}
@@ -78,7 +79,7 @@ export default function DeleteModal() {
                                 onClick={() => dispatch(hideDeleteModal())}
                             >
                                 <Image
-                                    src="/icons/close-icon.svg"
+                                    src={`${basePath}/icons/close-icon.svg`}
                                     alt="close icon"
                                     width={18}
                                     height={18}

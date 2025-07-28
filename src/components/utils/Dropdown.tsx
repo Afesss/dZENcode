@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./dropdown.module.css";
 import Image from "next/image";
 import { MouseEvent } from "react";
+import { basePath } from "@/utils/halpers";
 
 interface Props {
     className: string;
@@ -54,7 +55,7 @@ export default function Dropdown(props: Props) {
         >
             <p className={styles.title}>{selectedValue}</p>
             <Image
-                src="/icons/dropdown-icon.png"
+                src={`${basePath}/icons/dropdown-icon.png`}
                 alt="dropdown icon"
                 width={5}
                 height={4}

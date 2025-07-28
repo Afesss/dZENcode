@@ -24,7 +24,7 @@ export default function handler(
         console.log("🟢 Socket.io server start...");
 
         io = new Server(res.socket.server, {
-            path: `${basePath}/api/socket`,
+            path: "/api/socket",
         });
 
         io.on("connection", (socket) => {

@@ -31,8 +31,8 @@ export default function Header() {
     useEffect(() => {
         console.log(basePath);
         console.log("Base path env:", process.env.NEXT_PUBLIC_BASE_PATH);
-        axios.get(`${basePath}/api/socket`);
-        const socket = io({ path: `${basePath}/api/socket` });
+        axios.get("api/socket");
+        const socket = io({ path: "/api/socket" });
         socket.on("connect", () => {
             console.log("🟢 Socket connected");
         });
